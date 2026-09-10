@@ -1,112 +1,239 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="es">
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tsuki's Odyssey</title>
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
-    <link rel="stylesheet" href="estilos.css" />
-  </head>
-
-  <body>
-    <div class="d-flex justify-content-center">
-      <nav class="navbar bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img
-              src="./imagenes/Tsukis_Odyssey_Logo.png" class="img-fluid"
-              alt="Logo"
-              width="180"
-              height="140"
-              class="d-inline-block align-text-top"
-            />
-          </a>
-        </div>
-      </nav>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="./index.html">Inicio</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="./personajes.html"
-                >Personajes</a
-              >
-              <a class="nav-link" href="./contacto.html">Contacto</a>
-            </div>
-          </div>
-        </div>
-      </nav>
-      <nav class="navbar bg-body-tertiary">
-        <div class="container-fluid">
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Buscar"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Buscar
-            </button>
-          </form>
-        </div>
-      </nav>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+    <div class="cielo-fondo">
+        <div class="nube nube1"></div>
+        <div class="nube nube2"></div>
+        <div class="nube nube3"></div>
+        <span class="zanahoria z1">🥕</span>
+        <span class="zanahoria z2">🥕</span>
+        <span class="zanahoria z3">🥕</span>
+        <span class="zanahoria z4">🥕</span>
+        <span class="zanahoria z5">🥕</span>
     </div>
 
-    <div class="container-fluid">
-       
-        <div class="row justify-content-center">
-            <div class="col-md-4">
-                
-                <img src="./imagenes/tsuki.jpg" alt="tsuki" class="img-fluid rounded">
+    <header class="cabecera">
+        <div class="logo-contenedor">
+            <a href="index.html">
+                <img src="./imagenes/Tsukis_Odyssey_Logo.png" alt="Logo Tsuki" class="logo latido-suave" />
+            </a>
+        </div>
+        <nav class="navegacion">
+            <a href="index.html" class="nav-link activo">Inicio</a>
+            <a href="sobre_nosotros.html" class="nav-link">Sobre Nosotros</a>
+            <a href="personajes.html" class="nav-link">Personajes</a>
+            <a href="galeria.html" class="nav-link">Galería</a>
+            <div class="dropdown">
+                <button class="nav-link dropbtn">Otros juegos ▼</button>
+                <div class="dropdown-content">
+                    <a href="kleptocats.html">KleptoCats</a>
+                    <a href="pocketlove.html">Pocket Love</a>
+                    <a href="adorablehome.html">Adorable Home</a>
+                </div>
             </div>
-            <div class="col-md-8">
-                <div class="card" style="width: 100%;">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">La Odisea de Tsuki</h5>
-                        <p class="card-text">La Odisea de Tsuki es un juego pasivo de aventura que te sumergirá en el mundo de Tsuki y los excéntricos personajes de la Aldea Hongo. ¡Decora tu casa, haz amigos, atrapa todo tipo de peces y mucho más! Es importante saber que Tsuki no es tu mascota, sino un espíritu libre que rondará e interactuará por el mundo como le plazca. Pero si lo visitas con regularidad ¡seguramente encontrarás algo nuevo y emocionante sucediendo en el pueblo!</p>
-                        <div class="d-flex justify-content-center">
-                            <a href="https://play.google.com/store/apps/details?id=com.hyperbeard.odyssey&hl=en&gl=US" class="btn btn-dark">Descárgala en PlayStore</a>
-                            <a href="https://apps.apple.com/by/app/tsukis-odyssey/id1564146071" class="btn btn-dark">Descárgala en App Store</a>
+            <a href="ayuda.html" class="nav-link">Ayuda</a>
+            <a href="contacto.html" class="nav-link">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+<!-- Hero Animado Mágico con Logo -->
+        <section class="hero-animado">
+            <!-- Luciérnagas animadas -->
+            <div class="luciernagas-container">
+                <span class="luz l1"></span>
+                <span class="luz l2"></span>
+                <span class="luz l3"></span>
+                <span class="luz l4"></span>
+                <span class="luz l5"></span>
+                <span class="luz l6"></span>
+                <span class="luz l7"></span>
+            </div>
+            
+            <div class="hero-contenido-limpio">
+                <h1 class="titulo-gigante">La Odisea de Tsuki</h1>
+                <p class="subtitulo-hero">Tu aventura pacífica en la Aldea Hongo aguarda.</p>
+                
+                <!-- NUEVO: Sello sutil de HyperBeard -->
+                <img src="./imagenes/Site-logo.png" alt="HyperBeard" class="logo-studio-hero" />
+                
+                <div class="botones-descarga">
+                    <a href="https://play.google.com/store/apps/details?id=com.hyperbeard.odyssey" class="btn-descarga btn-latido">PlayStore</a>
+                    <a href="https://apps.apple.com/by/app/tsukis-odyssey/id1564146071" class="btn-descarga btn-latido">App Store</a>
+                </div>
+            </div>
+        </section>
+        <section class="texto-centrado-seccion">
+            <p>Sumérgete en la mágica y relajante experiencia de La Odisea de Tsuki, un juego de aventura pasiva que te invita a escapar del estrés diario y explorar los rincones más pintorescos de una vibrante aldea rural. A diferencia de otros juegos tradicionales, aquí Tsuki no es una mascota a la que debas cuidar constantemente; él es un espíritu completamente libre que toma sus propias decisiones, interactúa con su entorno y vive su vida a su propio ritmo. Tu misión será acompañarlo en su viaje, decorar su acogedora casa en el árbol con muebles increíbles, cultivar zanahorias en el huerto, pescar en aguas cristalinas y forjar amistades inolvidables con personajes entrañables como el zorro Yori, la jirafa Chi y la tortuga Moca.</p>
+            <details class="subseccion-desplegable mt-interactivo">
+                <summary>Descubre los secretos ocultos de la aldea</summary>
+                <div class="contenido-desplegable">
+                    <p>Al visitar la aldea en diferentes horarios, descubrirás a Tsuki realizando actividades únicas, desde elevar cometas hasta contemplar las estrellas. ¡No hay prisa, tómate tu tiempo y disfruta de la música relajante, atrapa bichos raros y completa tu enciclopedia fotográfica!</p>
+                </div>
+            </details>
+        </section>
+
+        <div class="contenedor-principal pb-0">
+            <div class="dos-columnas centrado">
+                <section class="columna-der-interactiva">
+                    <div class="gachapon-interactivo caja-fija">
+                        <h3>Máquina de Gachapón</h3>
+                        <p>¡Prueba tu suerte! Gira la manivela y descubre qué artículo coleccionable te toca hoy.</p>
+                        <div class="capsula-contenedor">
+                            <div id="capsulaGacha" class="capsula">🥚</div>
+                            <p id="premioGacha" class="mensaje-oculto"></p>
+                        </div>
+                        <button type="button" class="btn-enviar btn-latido mt-interactivo" id="btnGacha">Girar la manivela</button>
+                    </div>
+                </section>
+
+                <section class="columna-der-interactiva">
+                    <div class="encuesta-interactiva caja-fija">
+                        <h3>Test de Afinidad</h3>
+                        <p id="textoEncuesta">Responde estas preguntas y descubre a tu alma gemela en la aldea.</p>
+                        
+                        <form class="formulario-votacion" id="formAfinidad">
+                            
+                            <!-- Pregunta 1 -->
+                            <div class="paso-encuesta activo">
+                                <p class="pregunta-texto">1. ¿Qué prefieres hacer en una tarde libre?</p>
+                                <label class="opcion-voto"><input type="radio" name="p1" value="chi"><span class="custom-radio"></span>Leer un buen libro</label>
+                                <label class="opcion-voto"><input type="radio" name="p1" value="moca"><span class="custom-radio"></span>Tomar el té tranquilo</label>
+                                <label class="opcion-voto"><input type="radio" name="p1" value="yori"><span class="custom-radio"></span>Ayudar a los demás</label>
+                                <label class="opcion-voto"><input type="radio" name="p1" value="tsuki"><span class="custom-radio"></span>Explorar y fluir</label>
+                            </div>
+
+                            <!-- Pregunta 2 -->
+                            <div class="paso-encuesta">
+                                <p class="pregunta-texto">2. Elige tu rincón favorito:</p>
+                                <label class="opcion-voto"><input type="radio" name="p2" value="chi"><span class="custom-radio"></span>Un rincón silencioso</label>
+                                <label class="opcion-voto"><input type="radio" name="p2" value="moca"><span class="custom-radio"></span>Mi propia casa</label>
+                                <label class="opcion-voto"><input type="radio" name="p2" value="yori"><span class="custom-radio"></span>La plaza principal</label>
+                                <label class="opcion-voto"><input type="radio" name="p2" value="tsuki"><span class="custom-radio"></span>El muelle de pesca</label>
+                            </div>
+
+                            <!-- Pregunta 3 -->
+                            <div class="paso-encuesta">
+                                <p class="pregunta-texto">3. ¿Qué objeto te representa más?</p>
+                                <label class="opcion-voto"><input type="radio" name="p3" value="chi"><span class="custom-radio"></span>Unas gafas de lectura</label>
+                                <label class="opcion-voto"><input type="radio" name="p3" value="moca"><span class="custom-radio"></span>Una taza de porcelana</label>
+                                <label class="opcion-voto"><input type="radio" name="p3" value="yori"><span class="custom-radio"></span>Una libreta de notas</label>
+                                <label class="opcion-voto"><input type="radio" name="p3" value="tsuki"><span class="custom-radio"></span>Una mochila de viaje</label>
+                            </div>
+
+                            <button type="button" class="btn-enviar btn-latido mt-interactivo" id="btnSiguiente">Siguiente</button>
+                        </form>
+                        
+                        <div id="contenedorResultado" class="resultado-test">
+                            <p id="mensajeResultado" class="texto-resultado"></p>
+                            <button type="button" class="btn-enviar mt-interactivo" id="btnReiniciar">Volver a intentar</button>
                         </div>
                     </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="contenedor-principal pb-0">
+            <section class="seccion-lugares">
+                <h2 class="titulo-seccion-oscuro">Rincones por Explorar</h2>
+                <div class="contenedor-lugares">
+                    <article class="tarjeta-lugar">
+                        <img src="./imagenes/afac57f7817f03ca97ea980f5cf00499.jpg" alt="Casa del Árbol" class="img-suavizada">
+                        <div class="lugar-info">
+                            <h3>La Casa de Moca</h3>
+                            <p>Un rincón perfecto para disfrutar infusiones y charlas.</p>
+                        </div>
+                    </article>
+                    <article class="tarjeta-lugar">
+                        <img src="./imagenes/bb93763337e59f36d66d38d182d04174.jpg" alt="Picnic" class="img-suavizada">
+                        <div class="lugar-info">
+                            <h3>Club de Lectura</h3>
+                            <p>Sumergite en novelas rodeado de amigos.</p>
+                        </div>
+                    </article>
+                    <article class="tarjeta-lugar">
+                        <img src="./imagenes/1200px-Yori's_Store.jpg" alt="Tienda de Yori" class="img-suavizada">
+                        <div class="lugar-info">
+                            <h3>Tienda de Yori</h3>
+                            <p>El corazón comercial del pueblo. ¡Compra de todo!</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+
+        <div class="contenedor-principal">
+            <div class="dos-columnas centrado">
+                <section class="seccion-video">
+                    <div class="contenedor-video">
+                        <iframe src="https://www.youtube.com/embed/Neou_P0jOK0" title="Trailer" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </section>
+                <section class="seccion-promo">
+                    <h3 class="titulo-promo">¡Zanahorias Extra!</h3>
+                    <!-- Añadido margin-bottom gigante para empujar la imagen sin romper la altura de la caja -->
+                    <p style="margin-bottom: 3.5rem; color: #4a5568; font-size: 1.1rem;">Revisa las redes oficiales para encontrar códigos limitados.</p>
+                    <div class="imagen-promo-contenedor">
+                        <img src="./imagenes/videojuego-conejo-juego-redes-sociales-jpg.jpg" alt="Tsuki códigos" class="imagen-promo vibracion-hover" />
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="pie-pagina mt-auto">
+        <div class="contenedor-footer-nuevo">
+            <!-- Menú Horizontal Centrado -->
+            <nav class="mapa-enlaces-horizontal">
+                <a href="index.html">Inicio</a>
+                <a href="sobre_nosotros.html">Sobre Nosotros</a>
+                <a href="personajes.html">Personajes</a>
+                <a href="galeria.html">Galería</a>
+                <a href="kleptocats.html">KleptoCats</a>
+                <a href="pocketlove.html">Pocket Love</a>
+                <a href="adorablehome.html">Adorable Home</a>
+                <a href="ayuda.html">Ayuda</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+
+            <!-- Redes Sociales (Solo Logos) -->
+            <div class="redes-sociales-logos">
+                <a href="https://facebook.com/HyperBeardGames" target="_blank" class="logo-red" aria-label="Facebook">
+                    <svg viewBox="0 0 24 24"><path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg>
+                </a>
+                <a href="https://twitter.com/hyperbeard" target="_blank" class="logo-red" aria-label="Twitter">
+                    <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                </a>
+                <a href="https://instagram.com/hyperbeardg_" target="_blank" class="logo-red" aria-label="Instagram">
+                    <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                </a>
+                <a href="https://tiktok.com/@hyperbeardgames" target="_blank" class="logo-red" aria-label="TikTok">
+    <svg viewBox="0 0 448 512"><path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/></svg>
+</a>
+                <a href="https://www.youtube.com/channel/UCB8LM27oDAHXbGUI9jTqnvQ" target="_blank" class="logo-red" aria-label="YouTube">
+                    <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                </a>
+            </div>
+
+            <!-- Textos Legales -->
+            <div class="legal-footer">
+                <p>Copyright © HyperBeard, Inc. 2019-2024. All Rights Reserved.</p>
+                <div class="enlaces-legales">
+                    <a href="#">Términos y Condiciones</a>
+                    <span>|</span>
+                    <a href="#">Política de Privacidad</a>
                 </div>
             </div>
         </div>
-    
-       
-        <div class="row justify-content-center mt-4">
-          <div class="col-md-6">
-              <iframe width="681" height="383" src="https://www.youtube.com/embed/Neou_P0jOK0" title="Tsuki&#39;s Odyssey - Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              </div>
-          </div>
+    </footer>
 
-          <div class="row justify-content-center mt-4">
-            <div class="col-md-6">
-              <p class="text-center"><a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#">Códigos para ganar zanahorias por tiempo limitado</a></p>
-              <img src="./imagenes/videojuego-conejo-juego-redes-sociales-jpg.jpg" class="rounded img-fluid" alt="tsuki mirando para arriba">
-                
-              </div>
-            <footer class="text-bg-dark p-3 text-center">
-                Copyright © HyperBeard, Inc. 2019-2024. All Rights Reserved.
-            </footer>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./js/bootstrap.min.js"></script>
-  </body>
+    <script src="js/main.js"></script>
+</body>
 </html>

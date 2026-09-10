@@ -3,20 +3,17 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personajes - Tsuki's Odyssey</title>
+    <title>Adorable Home - HyperBeard</title>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css" />
 </head>
-<body>
+<body class="fondo-solido">
     <div class="cielo-fondo">
-        <div class="nube nube1"></div>
-        <div class="nube nube2"></div>
-        <div class="nube nube3"></div>
-        <span class="zanahoria z1">🥕</span>
-        <span class="zanahoria z2">🥕</span>
-        <span class="zanahoria z3">🥕</span>
-        <span class="zanahoria z4">🥕</span>
-        <span class="zanahoria z5">🥕</span>
+        <span class="zanahoria z1">🏠</span>
+        <span class="zanahoria z2">🏠</span>
+        <span class="zanahoria z3">🏠</span>
+        <span class="zanahoria z4">🏠</span>
+        <span class="zanahoria z5">🏠</span>
     </div>
 
     <header class="cabecera">
@@ -28,10 +25,10 @@
         <nav class="navegacion">
             <a href="index.html" class="nav-link">Inicio</a>
             <a href="sobre_nosotros.html" class="nav-link">Sobre Nosotros</a>
-            <a href="personajes.html" class="nav-link activo">Personajes</a>
+            <a href="personajes.html" class="nav-link">Personajes</a>
             <a href="galeria.html" class="nav-link">Galería</a>
             <div class="dropdown">
-                <button class="nav-link dropbtn">Otros juegos ▼</button>
+                <button class="nav-link dropbtn activo">Otros juegos ▼</button>
                 <div class="dropdown-content">
                     <a href="kleptocats.html">KleptoCats</a>
                     <a href="pocketlove.html">Pocket Love</a>
@@ -44,99 +41,24 @@
     </header>
 
     <main class="contenedor-principal pt-100 gap-reducido">
-        <h1 class="titulo-seccion-oscuro text-center w-100 mb-0">Habitantes de la Aldea</h1>
-        
-        <div class="grilla-personajes-interactiva mt-interactivo">
-            <!-- Tsuki -->
-            <article class="personaje-card" onclick="abrirModal('Tsuki', 'Un conejo que busca paz en el campo. Dejó su estresante trabajo en la ciudad para disfrutar de las pequeñas cosas.', './imagenes/tsukiiiiiii.jpg')">
-                <img src="./imagenes/tsukiiiiiii.jpg" alt="Tsuki" />
-                <div class="personaje-overlay">
-                    <h2>Tsuki</h2>
-                    <p>Click para ver más</p>
+        <h1 class="titulo-seccion-oscuro text-center w-100 mb-0">Adorable Home</h1>
+        <div class="dos-columnas align-center">
+            <section class="columna-texto">
+                <p>Tú y tu pareja acaban de mudarse a una nueva casa en los suburbios con su compañero peludo, el gato Snow. Descubre la paz de preparar comidas, decorar el hogar y ganar "Amor" para desbloquear nuevas áreas y visitantes en tu jardín.</p>
+                <div class="botones-descarga mt-interactivo">
+                    <a href="https://hyperbeard.com/" target="_blank" class="btn-descarga btn-latido">Sitio Oficial</a>
                 </div>
-            </article>
-
-            <!-- Chi -->
-            <article class="personaje-card" onclick="abrirModal('Chi', 'Una jirafa apasionada por la lectura. Pasa sus tardes inmersa en novelas y ama el silencio.', './imagenes/chi.jpg')">
-                <img src="./imagenes/chi.jpg" alt="Chi" />
-                <div class="personaje-overlay">
-                    <h2>Chi</h2>
-                    <p>Click para ver más</p>
-                </div>
-            </article>
-    <!-- Momo -->
-            <article class="personaje-card" onclick="abrirModal('Momo', 'La mona que maneja la tradicional casa de té al lado del carrito de ramen. Es muy tranquila.', './imagenes/momo.jpg')">
-                <img src="./imagenes/momo.jpg" alt="Momo" />
-                <div class="personaje-overlay">
-                    <h2>Momo</h2>
-                    <p>Click para ver más</p>
-                </div>
-            </article>
-
-            <!-- Dawn -->
-            <article class="personaje-card" onclick="abrirModal('Dawn', 'La castor carpintera del pueblo. Se encarga de reparar la casa del árbol y vender planos de expansión.', './imagenes/dawn.jpg')">
-                <img src="./imagenes/dawn.jpg" alt="Dawn" />
-                <div class="personaje-overlay">
-                    <h2>Dawn</h2>
-                    <p>Click para ver más</p>
-                </div>
-            </article>
-
-            <!-- Rosemary -->
-            <article class="personaje-card" onclick="abrirModal('Rosemary', 'Una oveja sumamente dulce que dirige la tienda de plantas y flores. A veces lucha con su estado de ánimo.', './imagenes/rosemary.jpg')">
-                <img src="./imagenes/rosemary.jpg" alt="Rosemary" />
-                <div class="personaje-overlay">
-                    <h2>Rosemary</h2>
-                    <p>Click para ver más</p>
-                </div>
-            </article>
-
-        
-
-            <!-- Elfie -->
-            <article class="personaje-card" onclick="abrirModal('Elfie', 'Un pangolín que trabaja en el turno nocturno de la tienda de Yori. Es reservada y un poco fría al principio.', './imagenes/elfie.jpg')">
-                <img src="./imagenes/elfie.jpg" alt="Elfie" />
-                <div class="personaje-overlay">
-                    <h2>Elfie</h2>
-                    <p>Click para ver más</p>
-                </div>
-            </article>
-
-        
-            <!-- Bobo -->
-            <article class="personaje-card" onclick="abrirModal('Bobo', 'El panda chef que prepara el mejor ramen del pueblo en su pintoresco carrito callejero.', './imagenes/bobo.jpg')">
-                <img src="./imagenes/bobo.jpg" alt="Bobo" />
-                <div class="personaje-overlay">
-                    <h2>Bobo</h2>
-                    <p>Click para ver más</p>
-                </div>
-            </article>
-
-        
-
-            <!-- Pipi -->
-            <article class="personaje-card" onclick="abrirModal('Pipi', 'La enérgica hija de Yori. Una pequeña zorrita a la que le encanta pintar y vender sus dibujos.', './imagenes/pipi.jpg')">
-                <img src="./imagenes/pipi.jpg" alt="Pipi" />
-                <div class="personaje-overlay">
-                    <h2>Pipi</h2>
-                    <p>Click para ver más</p>
-                </div>
-            </article>
-        </div>
-
-        <!-- Modal de Personajes (Mantiene imagen redonda pequeña) -->
-        <div id="modalPersonaje" class="modal-oculto">
-            <div class="modal-contenido">
-                <span class="cerrar-modal">&times;</span>
-                <img id="modalImg" src="" alt="Personaje">
-                <h2 id="modalTitulo"></h2>
-                <p id="modalDesc"></p>
-            </div>
+            </section>
+     <section class="columna-imagen">
+                <iframe class="imagen-destacada shadow-lg rounded" src="https://www.youtube.com/embed/Cns7y7to4ok?autoplay=0&rel=0" title="Adorable Home Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border: none;"></iframe>
+            </section>
         </div>
     </main>
 
     <footer class="pie-pagina mt-auto">
         <div class="contenedor-footer-nuevo">
+            
+            <!-- Menú Horizontal Centrado -->
             <nav class="mapa-enlaces-horizontal">
                 <a href="index.html">Inicio</a>
                 <a href="sobre_nosotros.html">Sobre Nosotros</a>
@@ -148,7 +70,9 @@
                 <a href="ayuda.html">Ayuda</a>
                 <a href="contacto.html">Contacto</a>
             </nav>
-        <div class="redes-sociales-logos">
+
+            <!-- Redes Sociales (Solo Logos) -->
+   <div class="redes-sociales-logos">
                 <a href="https://facebook.com/HyperBeardGames" target="_blank" class="logo-red" aria-label="Facebook">
                     <svg viewBox="0 0 24 24"><path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg>
                 </a>
@@ -165,6 +89,8 @@
                     <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
                 </a>
             </div>
+
+            <!-- Textos Legales -->
             <div class="legal-footer">
                 <p>Copyright © HyperBeard, Inc. 2019-2024. All Rights Reserved.</p>
                 <div class="enlaces-legales">
@@ -173,6 +99,7 @@
                     <a href="#">Política de Privacidad</a>
                 </div>
             </div>
+
         </div>
     </footer>
     <script src="js/main.js"></script>

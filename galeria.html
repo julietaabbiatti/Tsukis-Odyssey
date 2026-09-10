@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personajes - Tsuki's Odyssey</title>
+    <title>Galería - Tsuki's Odyssey</title>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css" />
 </head>
@@ -28,8 +28,8 @@
         <nav class="navegacion">
             <a href="index.html" class="nav-link">Inicio</a>
             <a href="sobre_nosotros.html" class="nav-link">Sobre Nosotros</a>
-            <a href="personajes.html" class="nav-link activo">Personajes</a>
-            <a href="galeria.html" class="nav-link">Galería</a>
+            <a href="personajes.html" class="nav-link">Personajes</a>
+            <a href="galeria.html" class="nav-link activo">Galería</a>
             <div class="dropdown">
                 <button class="nav-link dropbtn">Otros juegos ▼</button>
                 <div class="dropdown-content">
@@ -44,93 +44,80 @@
     </header>
 
     <main class="contenedor-principal pt-100 gap-reducido">
-        <h1 class="titulo-seccion-oscuro text-center w-100 mb-0">Habitantes de la Aldea</h1>
+        <h1 class="titulo-seccion-oscuro text-center w-100 mb-0">Galería de Aventuras</h1>
         
-        <div class="grilla-personajes-interactiva mt-interactivo">
-            <!-- Tsuki -->
-            <article class="personaje-card" onclick="abrirModal('Tsuki', 'Un conejo que busca paz en el campo. Dejó su estresante trabajo en la ciudad para disfrutar de las pequeñas cosas.', './imagenes/tsukiiiiiii.jpg')">
-                <img src="./imagenes/tsukiiiiiii.jpg" alt="Tsuki" />
-                <div class="personaje-overlay">
-                    <h2>Tsuki</h2>
-                    <p>Click para ver más</p>
-                </div>
-            </article>
+        <div class="grilla-mosaico mt-interactivo">
+            
 
-            <!-- Chi -->
-            <article class="personaje-card" onclick="abrirModal('Chi', 'Una jirafa apasionada por la lectura. Pasa sus tardes inmersa en novelas y ama el silencio.', './imagenes/chi.jpg')">
-                <img src="./imagenes/chi.jpg" alt="Chi" />
-                <div class="personaje-overlay">
-                    <h2>Chi</h2>
-                    <p>Click para ver más</p>
+            
+                      <div class="item-mosaico" onclick="abrirModalGaleria('Cumpleaños', 'Festejando el cumpleaños de Tsuki con amigos.', './imagenes/42dfee3b3eda934e0c4a2fa8d768ae41.jpg')">
+                <img src="./imagenes/42dfee3b3eda934e0c4a2fa8d768ae41.jpg" alt="Aventura" />
+                <div class="mosaico-overlay">
+                    <h3>Cumpleaños</h3>
                 </div>
-            </article>
-    <!-- Momo -->
-            <article class="personaje-card" onclick="abrirModal('Momo', 'La mona que maneja la tradicional casa de té al lado del carrito de ramen. Es muy tranquila.', './imagenes/momo.jpg')">
-                <img src="./imagenes/momo.jpg" alt="Momo" />
-                <div class="personaje-overlay">
-                    <h2>Momo</h2>
-                    <p>Click para ver más</p>
+            </div>
+
+
+            <div class="item-mosaico" onclick="abrirModalGaleria('Cultivando', 'Las zanahorias son la moneda principal. Tsuki pasa horas cuidando su huerto.', './imagenes/b92b51144065b8fc735a5dda6a359671.jpg')">
+                <img src="./imagenes/b92b51144065b8fc735a5dda6a359671.jpg" alt="Aventura" />
+                <div class="mosaico-overlay">
+                    <h3>Cultivando</h3>
                 </div>
-            </article>
+            </div>
 
-            <!-- Dawn -->
-            <article class="personaje-card" onclick="abrirModal('Dawn', 'La castor carpintera del pueblo. Se encarga de reparar la casa del árbol y vender planos de expansión.', './imagenes/dawn.jpg')">
-                <img src="./imagenes/dawn.jpg" alt="Dawn" />
-                <div class="personaje-overlay">
-                    <h2>Dawn</h2>
-                    <p>Click para ver más</p>
+            <div class="item-mosaico" onclick="abrirModalGaleria('Noche en el Bar', 'Un ramen reconfortante en el bar de Ratthew.', './imagenes/8ae65e1dccbed3ade0e623d985f420b3.jpg')">
+                <img src="./imagenes/8ae65e1dccbed3ade0e623d985f420b3.jpg" alt="Aventura" />
+                <div class="mosaico-overlay">
+                    <h3>Noche en el Bar</h3>
                 </div>
-            </article>
+            </div>
 
-            <!-- Rosemary -->
-            <article class="personaje-card" onclick="abrirModal('Rosemary', 'Una oveja sumamente dulce que dirige la tienda de plantas y flores. A veces lucha con su estado de ánimo.', './imagenes/rosemary.jpg')">
-                <img src="./imagenes/rosemary.jpg" alt="Rosemary" />
-                <div class="personaje-overlay">
-                    <h2>Rosemary</h2>
-                    <p>Click para ver más</p>
+            <div class="item-mosaico" onclick="abrirModalGaleria('Pescando', 'Tsuki y Chi encontraron su nuevo rincón favorito en el muelle de la aldea.', './imagenes/pesca.jpg')">
+                <img src="./imagenes/pesca.jpg" alt="Aventura" />
+                <div class="mosaico-overlay">
+                    <h3>Pescando</h3>
                 </div>
-            </article>
+            </div>
 
-        
 
-            <!-- Elfie -->
-            <article class="personaje-card" onclick="abrirModal('Elfie', 'Un pangolín que trabaja en el turno nocturno de la tienda de Yori. Es reservada y un poco fría al principio.', './imagenes/elfie.jpg')">
-                <img src="./imagenes/elfie.jpg" alt="Elfie" />
-                <div class="personaje-overlay">
-                    <h2>Elfie</h2>
-                    <p>Click para ver más</p>
+            <div class="item-mosaico" onclick="abrirModalGaleria('Pascua', 'Tsuki descubre sorpresas en la tienda de Yori durante la celebración de Pascua.', './imagenes/47590ecc51ad9d8f754ef25d6d624e12.jpg')">
+                <img src="./imagenes/47590ecc51ad9d8f754ef25d6d624e12.jpg" alt="Aventura" />
+                <div class="mosaico-overlay">
+                    <h3>Pascua</h3>
                 </div>
-            </article>
+            </div>
 
-        
-            <!-- Bobo -->
-            <article class="personaje-card" onclick="abrirModal('Bobo', 'El panda chef que prepara el mejor ramen del pueblo en su pintoresco carrito callejero.', './imagenes/bobo.jpg')">
-                <img src="./imagenes/bobo.jpg" alt="Bobo" />
-                <div class="personaje-overlay">
-                    <h2>Bobo</h2>
-                    <p>Click para ver más</p>
+  
+
+            <div class="item-mosaico" onclick="abrirModalGaleria('Rodeo', 'Festival de Rodeo', './imagenes/674789843906256e65d62193dd27659d.jpg')">
+                <img src="./imagenes/674789843906256e65d62193dd27659d.jpg" alt="Aventura" />
+                <div class="mosaico-overlay">
+                    <h3>Rodeo</h3>
                 </div>
-            </article>
+            </div>
 
-        
-
-            <!-- Pipi -->
-            <article class="personaje-card" onclick="abrirModal('Pipi', 'La enérgica hija de Yori. Una pequeña zorrita a la que le encanta pintar y vender sus dibujos.', './imagenes/pipi.jpg')">
-                <img src="./imagenes/pipi.jpg" alt="Pipi" />
-                <div class="personaje-overlay">
-                    <h2>Pipi</h2>
-                    <p>Click para ver más</p>
+            <div class="item-mosaico" onclick="abrirModalGaleria('Casa del árbol', 'Tsuki con una lectura relajante', './imagenes/7ed6af620ef88b303f689eecb905498d.jpg')">
+                <img src="./imagenes/7ed6af620ef88b303f689eecb905498d.jpg" alt="Aventura" />
+                <div class="mosaico-overlay">
+                    <h3>Casa del árbol</h3>
                 </div>
-            </article>
+            </div>
+            <div class="item-mosaico" onclick="abrirModalGaleria('Halloween', 'Halloween en Aldea Hongo', './imagenes/f573e5183b39780727c01264c049a970.jpg')">
+                <img src="./imagenes/f573e5183b39780727c01264c049a970.jpg" alt="Aventura" />
+                <div class="mosaico-overlay">
+                    <h3>Halloween</h3>
+                </div>
+            </div>
+
         </div>
 
-        <!-- Modal de Personajes (Mantiene imagen redonda pequeña) -->
-        <div id="modalPersonaje" class="modal-oculto">
-            <div class="modal-contenido">
-                <span class="cerrar-modal">&times;</span>
-                <img id="modalImg" src="" alt="Personaje">
-                <h2 id="modalTitulo"></h2>
-                <p id="modalDesc"></p>
+        <!-- Modal Exclusivo para la Galería (Imágenes grandes y cuadradas/rectangulares) -->
+        <div id="modalGaleria" class="modal-oculto">
+            <div class="modal-galeria-contenido">
+                <span class="cerrar-modal" id="cerrarGaleria">&times;</span>
+                <img id="modalGaleriaImg" src="" alt="Aventura Ampliada">
+                <h2 id="modalGaleriaTitulo"></h2>
+                <p id="modalGaleriaDesc"></p>
             </div>
         </div>
     </main>
@@ -148,7 +135,7 @@
                 <a href="ayuda.html">Ayuda</a>
                 <a href="contacto.html">Contacto</a>
             </nav>
-        <div class="redes-sociales-logos">
+  <div class="redes-sociales-logos">
                 <a href="https://facebook.com/HyperBeardGames" target="_blank" class="logo-red" aria-label="Facebook">
                     <svg viewBox="0 0 24 24"><path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg>
                 </a>

@@ -1,129 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
-    <link rel="stylesheet" href="estilos.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto - Tsuki's Odyssey</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css" />
 </head>
-<body>
-    <div class="d-flex justify-content-center">
-        <nav class="navbar bg-body-tertiary">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-              <img
-                src="./imagenes/Tsukis_Odyssey_Logo.png"
-                alt="Logo"
-                width="180"
-                height="140"
-                class="d-inline-block align-text-top"
-              />
+<body class="fondo-solido">
+    <div class="cielo-fondo">
+        <div class="nube nube1"></div>
+        <div class="nube nube2"></div>
+        <div class="nube nube3"></div>
+        <span class="zanahoria z1">🥕</span>
+        <span class="zanahoria z2">🥕</span>
+        <span class="zanahoria z3">🥕</span>
+        <span class="zanahoria z4">🥕</span>
+        <span class="zanahoria z5">🥕</span>
+    </div>
+
+    <header class="cabecera">
+        <div class="logo-contenedor">
+            <a href="index.html">
+                <img src="./imagenes/Tsukis_Odyssey_Logo.png" alt="Logo Tsuki" class="logo latido-suave" />
             </a>
-          </div>
-        </nav>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="./index.html">Inicio</a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNavAltMarkup"
-              aria-controls="navbarNavAltMarkup"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="./personajes.html"
-                  >Personajes</a
-                >
-                <a class="nav-link" href="./contacto.html">Contacto</a>
-              </div>
+        </div>
+        <nav class="navegacion">
+            <a href="index.html" class="nav-link">Inicio</a>
+            <a href="sobre_nosotros.html" class="nav-link">Sobre Nosotros</a>
+            <a href="personajes.html" class="nav-link">Personajes</a>
+            <a href="galeria.html" class="nav-link">Galería</a>
+            <div class="dropdown">
+                <button class="nav-link dropbtn">Otros juegos ▼</button>
+                <div class="dropdown-content">
+                    <a href="kleptocats.html">KleptoCats</a>
+                    <a href="pocketlove.html">Pocket Love</a>
+                    <a href="adorablehome.html">Adorable Home</a>
+                </div>
             </div>
-          </div>
+            <a href="ayuda.html" class="nav-link">Ayuda</a>
+            <a href="contacto.html" class="nav-link activo">Contacto</a>
         </nav>
-        <nav class="navbar bg-body-tertiary">
-          <div class="container-fluid">
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Buscar"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Buscar
-              </button>
-            </form>
-          </div>
-        </nav>
-      </div>
-    <section class="contacto">
-        <h2 class="text-center fw-bold"> ¡Contáctanos! </h2>
-        <form action="" method="post" class="formulario">
-          <fieldset class="fieldset">
-            <legend class="legend"> Información del contacto</legend>
-    
-            <div class="form_group">
-              <label for="nombre" class="label">Nombre</label>
-              <input type="text" class="input" name="nombre" id="nombre">
-            </div>
-            <div class="form_group">
-              <label for="apellido" class="label">Apellido</label>
-              <input type="text" class="input" name="apellido" id="apellido">
-            </div>
-    
-            <div class="form_group">
-              <label for="clave" class="label">Contraseña</label>
-              <input type="password" class="input" name="clave" id="clave">
+    </header>
+
+    <main class="contenedor-principal pt-100">
+        <div class="dos-columnas alineacion-arriba">
+            <section class="seccion-contacto">
+                <h1 class="titulo-seccion-oscuro text-center w-100">¡Hablemos!</h1>
+                <p class="mb-4 text-center w-100">¿Tienes ideas para la Aldea Hongo o necesitas soporte? Escríbenos.</p>
+                <form class="formulario" id="formContacto">
+                    <div class="grupo-form">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="grupo-form">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                    </div>
+                    <div class="grupo-form">
+                        <label for="tipoConsulta">Tipo de consulta</label>
+                        <select id="tipoConsulta" class="input-select">
+                            <option value="soporte">Soporte Técnico</option>
+                            <option value="sugerencia">Sugerencia de Juego</option>
+                            <option value="negocios">Negocios</option>
+                        </select>
+                    </div>
+                    <div class="grupo-form">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="¿Qué quieres contarnos?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-enviar w-100">Enviar Mensaje</button>
+                </form>
+            </section>
+
+            <section class="seccion-mapa-faq">
+                <div class="mapa-interactivo mb-4">
+                    <h3 class="mb-2 text-center">Nuestras Oficinas</h3>
+                    <div class="contenedor-iframe-mapa shadow-lg">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15049.524673199858!2d-99.1764619!3d19.4124976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff39a6659775%3A0x6b8f362a4d046f4b!2sCondesa%2C%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX%2C%20M%C3%A9xico!5e0!3m2!1ses!2sar!4v1700000000000" width="100%" height="350" style="border:0; border-radius: 15px;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+
+                <div class="faq-contacto mt-interactivo">
+                    <h3 class="mb-2 text-center">Preguntas Frecuentes</h3>
+                    <div class="acordeon">
+                        <details class="item-acordeon">
+                            <summary>¿Cuánto tardan en responder?</summary>
+                            <div class="contenido-acordeon"><p>Nuestro equipo de soporte suele responder en menos de 48 horas hábiles.</p></div>
+                        </details>
+                        <details class="item-acordeon">
+                            <summary>Perdí mi progreso, ¿qué hago?</summary>
+                            <div class="contenido-acordeon"><p>Asegúrate de estar conectado a Google Play Games o Game Center. Consulta nuestra página de Ayuda para más detalles.</p></div>
+                        </details>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+<footer class="pie-pagina mt-auto">
+        <div class="contenedor-footer-nuevo">
+            
+            <!-- Menú Horizontal Centrado -->
+            <nav class="mapa-enlaces-horizontal">
+                <a href="index.html">Inicio</a>
+                <a href="sobre_nosotros.html">Sobre Nosotros</a>
+                <a href="personajes.html">Personajes</a>
+                <a href="galeria.html">Galería</a>
+                <a href="kleptocats.html">KleptoCats</a>
+                <a href="pocketlove.html">Pocket Love</a>
+                <a href="adorablehome.html">Adorable Home</a>
+                <a href="ayuda.html">Ayuda</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+
+            <!-- Redes Sociales (Solo Logos) -->
+  <div class="redes-sociales-logos">
+                <a href="https://facebook.com/HyperBeardGames" target="_blank" class="logo-red" aria-label="Facebook">
+                    <svg viewBox="0 0 24 24"><path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg>
+                </a>
+                <a href="https://twitter.com/hyperbeard" target="_blank" class="logo-red" aria-label="Twitter">
+                    <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                </a>
+                <a href="https://instagram.com/hyperbeardg_" target="_blank" class="logo-red" aria-label="Instagram">
+                    <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                </a>
+                <a href="https://tiktok.com/@hyperbeardgames" target="_blank" class="logo-red" aria-label="TikTok">
+    <svg viewBox="0 0 448 512"><path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/></svg>
+</a>
+                <a href="https://www.youtube.com/channel/UCB8LM27oDAHXbGUI9jTqnvQ" target="_blank" class="logo-red" aria-label="YouTube">
+                    <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                </a>
             </div>
 
-            <div class="form_group">
-              <label for="edad" class="label">Edad</label>
-              <input type="number" class="input" name="edad" id="edad" min="18" max="100">
+            <!-- Textos Legales -->
+            <div class="legal-footer">
+                <p>Copyright © HyperBeard, Inc. 2019-2024. All Rights Reserved.</p>
+                <div class="enlaces-legales">
+                    <a href="#">Términos y Condiciones</a>
+                    <span>|</span>
+                    <a href="#">Política de Privacidad</a>
+                </div>
             </div>
-    
-            <div class="form_group"> 
-              <label for="mensaje" class="label">Mensaje</label>
-              <textarea name="mensaje" id="mensaje" rows="5" cols="20" minlength="10" maxlength="200"></textarea>
-            </div>
-    
-            <div class="form_group">
-              <label for="sitioWeb" class="label">Sitio Web</label>
-              <input type="url" class="input" name="sitioWeb" pattern="https?://.+" title="Por favor, ingrese una URL valida">
-            </div>
-    
-            <div class="form_group">
-              <label for="pais" class="label"> Pais </label>
-              <select name="pais" id="">
-                <option value="A"> Argentina</option>
-                <option value="C"> Chile</option>
-                <option value="B"> Bolivia</option>
-              </select>
-            </div>
-            <div>
-              <img src="./imagenes/tsuki picnic.jpg" alt="tsuki y amigos" class="imagentsuki">
-            </div>
-          </fieldset>
-    
-          <input type="submit" class="submit-enviar" value="Enviar formulario">
-    
-        </form>
-      </section>
 
-      <footer class="text-bg-dark p-3 text-center">
-        Copyright © HyperBeard, Inc. 2019-2024. All Rights Reserved.
+        </div>
     </footer>
-
-      <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

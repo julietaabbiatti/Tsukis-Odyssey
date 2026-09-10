@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personajes - Tsuki's Odyssey</title>
+    <title>Sobre Nosotros - Tsuki's Odyssey</title>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css" />
 </head>
-<body>
+<body class="fondo-solido">
     <div class="cielo-fondo">
         <div class="nube nube1"></div>
         <div class="nube nube2"></div>
@@ -27,8 +27,8 @@
         </div>
         <nav class="navegacion">
             <a href="index.html" class="nav-link">Inicio</a>
-            <a href="sobre_nosotros.html" class="nav-link">Sobre Nosotros</a>
-            <a href="personajes.html" class="nav-link activo">Personajes</a>
+            <a href="sobre_nosotros.html" class="nav-link activo">Sobre Nosotros</a>
+            <a href="personajes.html" class="nav-link">Personajes</a>
             <a href="galeria.html" class="nav-link">Galería</a>
             <div class="dropdown">
                 <button class="nav-link dropbtn">Otros juegos ▼</button>
@@ -43,92 +43,54 @@
         </nav>
     </header>
 
-    <main class="contenedor-principal pt-100 gap-reducido">
-        <h1 class="titulo-seccion-oscuro text-center w-100 mb-0">Habitantes de la Aldea</h1>
+    <main class="contenedor-principal gap-reducido" style="padding-top: 0;">
         
-        <div class="grilla-personajes-interactiva mt-interactivo">
-            <!-- Tsuki -->
-            <article class="personaje-card" onclick="abrirModal('Tsuki', 'Un conejo que busca paz en el campo. Dejó su estresante trabajo en la ciudad para disfrutar de las pequeñas cosas.', './imagenes/tsukiiiiiii.jpg')">
-                <img src="./imagenes/tsukiiiiiii.jpg" alt="Tsuki" />
-                <div class="personaje-overlay">
-                    <h2>Tsuki</h2>
-                    <p>Click para ver más</p>
-                </div>
-            </article>
-
-            <!-- Chi -->
-            <article class="personaje-card" onclick="abrirModal('Chi', 'Una jirafa apasionada por la lectura. Pasa sus tardes inmersa en novelas y ama el silencio.', './imagenes/chi.jpg')">
-                <img src="./imagenes/chi.jpg" alt="Chi" />
-                <div class="personaje-overlay">
-                    <h2>Chi</h2>
-                    <p>Click para ver más</p>
-                </div>
-            </article>
-    <!-- Momo -->
-            <article class="personaje-card" onclick="abrirModal('Momo', 'La mona que maneja la tradicional casa de té al lado del carrito de ramen. Es muy tranquila.', './imagenes/momo.jpg')">
-                <img src="./imagenes/momo.jpg" alt="Momo" />
-                <div class="personaje-overlay">
-                    <h2>Momo</h2>
-                    <p>Click para ver más</p>
-                </div>
-            </article>
-
-            <!-- Dawn -->
-            <article class="personaje-card" onclick="abrirModal('Dawn', 'La castor carpintera del pueblo. Se encarga de reparar la casa del árbol y vender planos de expansión.', './imagenes/dawn.jpg')">
-                <img src="./imagenes/dawn.jpg" alt="Dawn" />
-                <div class="personaje-overlay">
-                    <h2>Dawn</h2>
-                    <p>Click para ver más</p>
-                </div>
-            </article>
-
-            <!-- Rosemary -->
-            <article class="personaje-card" onclick="abrirModal('Rosemary', 'Una oveja sumamente dulce que dirige la tienda de plantas y flores. A veces lucha con su estado de ánimo.', './imagenes/rosemary.jpg')">
-                <img src="./imagenes/rosemary.jpg" alt="Rosemary" />
-                <div class="personaje-overlay">
-                    <h2>Rosemary</h2>
-                    <p>Click para ver más</p>
-                </div>
-            </article>
-
-        
-
-            <!-- Elfie -->
-            <article class="personaje-card" onclick="abrirModal('Elfie', 'Un pangolín que trabaja en el turno nocturno de la tienda de Yori. Es reservada y un poco fría al principio.', './imagenes/elfie.jpg')">
-                <img src="./imagenes/elfie.jpg" alt="Elfie" />
-                <div class="personaje-overlay">
-                    <h2>Elfie</h2>
-                    <p>Click para ver más</p>
-                </div>
-            </article>
-
-        
-            <!-- Bobo -->
-            <article class="personaje-card" onclick="abrirModal('Bobo', 'El panda chef que prepara el mejor ramen del pueblo en su pintoresco carrito callejero.', './imagenes/bobo.jpg')">
-                <img src="./imagenes/bobo.jpg" alt="Bobo" />
-                <div class="personaje-overlay">
-                    <h2>Bobo</h2>
-                    <p>Click para ver más</p>
-                </div>
-            </article>
-
-        
-
-            <!-- Pipi -->
-            <article class="personaje-card" onclick="abrirModal('Pipi', 'La enérgica hija de Yori. Una pequeña zorrita a la que le encanta pintar y vender sus dibujos.', './imagenes/pipi.jpg')">
-                <img src="./imagenes/pipi.jpg" alt="Pipi" />
-                <div class="personaje-overlay">
-                    <h2>Pipi</h2>
-                    <p>Click para ver más</p>
-                </div>
-            </article>
+        <!-- PRIMERA PANTALLA: Ocupa el 100% del alto (100vh) -->
+        <div style="min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; padding-top: 90px;">
+            <h1 class="titulo-seccion-oscuro text-center w-100 mb-0">Sobre Nosotros</h1>
+            
+            <section class="texto-centrado-seccion" style="margin: 2rem auto 0 auto; padding: 3rem;">
+                <h3 class="mb-4" style="color: #ff9a8b; font-size: 2rem;">Hacemos juegos pequeñitos pero llenos de amor</h3>
+                <p style="margin-bottom: 0;">Somos el mayor desarrollador independiente en México. Creemos firmemente que los videojuegos no tienen que ser estresantes ni demandantes para ser increíblemente inmersivos. Nuestro objetivo con <strong>Tsuki's Odyssey</strong> es brindarte un refugio digital: un espacio seguro al que puedes entrar un par de minutos al día para sonreír, relajarte y disfrutar del arte de no hacer nada.</p>
+            </section>
         </div>
 
-        <!-- Modal de Personajes (Mantiene imagen redonda pequeña) -->
+        <!-- SEGUNDA PANTALLA: Solo visible al deslizar hacia abajo -->
+        <div style="padding-bottom: 3rem;">
+            <h2 class="titulo-seccion-oscuro text-center w-100 mb-4 mt-0">Nuestro Equipo</h2>
+            
+            <div class="grilla-personajes-interactiva">
+                <article class="personaje-card" onclick="abrirModal('Antonio Uribe', 'Co-Fundador y CEO. Un apasionado por crear universos adorables y conectar con la comunidad global.', './imagenes/benny.jpg')">
+                    <img src="./imagenes/benny.jpg" alt="Antonio" />
+                    <div class="personaje-overlay">
+                        <h2>Antonio</h2>
+                        <p>CEO</p>
+                    </div>
+                </article>
+
+                <article class="personaje-card" onclick="abrirModal('Arte y Animación', 'El talentoso equipo detrás de cada trazo, nube y zanahoria. Ellos le dan vida y calidez a la Aldea Hongo.', './imagenes/aboutus_000.png')">
+                    <img src="./imagenes/aboutus_000.png" alt="Arte" />
+                    <div class="personaje-overlay">
+                        <h2>Equipo de Arte</h2>
+                        <p>Creativos</p>
+                    </div>
+                </article>
+
+                <article class="personaje-card" onclick="abrirModal('Desarrollo', 'Nuestros ingenieros de código. Los encargados de que pescar y cultivar funcione como magia pura.', './imagenes/Home_000_rojo_A_2025.png')">
+                    <img src="./imagenes/Home_000_rojo_A_2025.png" alt="Desarrollo" />
+                    <div class="personaje-overlay">
+                        <h2>Desarrollo</h2>
+                        <p>Programadores</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <!-- Modal de Equipo -->
         <div id="modalPersonaje" class="modal-oculto">
             <div class="modal-contenido">
                 <span class="cerrar-modal">&times;</span>
-                <img id="modalImg" src="" alt="Personaje">
+                <img id="modalImg" src="" alt="Equipo">
                 <h2 id="modalTitulo"></h2>
                 <p id="modalDesc"></p>
             </div>
@@ -148,7 +110,7 @@
                 <a href="ayuda.html">Ayuda</a>
                 <a href="contacto.html">Contacto</a>
             </nav>
-        <div class="redes-sociales-logos">
+  <div class="redes-sociales-logos">
                 <a href="https://facebook.com/HyperBeardGames" target="_blank" class="logo-red" aria-label="Facebook">
                     <svg viewBox="0 0 24 24"><path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg>
                 </a>
