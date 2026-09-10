@@ -361,7 +361,6 @@ p { font-weight: 400; }
 .enlaces-legales a { color: #a0aec0; text-decoration: none; transition: color 0.3s; }
 .enlaces-legales a:hover { color: #ffffff; }
 .enlaces-legales span { color: #4a5568; }
-
 /* ========================================================
    MEDIA QUERIES (RESPONSIVE)
    ======================================================== */
@@ -372,12 +371,18 @@ p { font-weight: 400; }
 }
 
 @media (max-width: 768px) { 
-    .cabecera { flex-direction: column; gap: 1rem; position: static; } 
+    .cabecera { flex-direction: column; gap: 0.8rem; position: static; padding: 1rem; } 
+    
+    /* MAGIA PARA EL MENÚ: flex-wrap hace que bajen a otra línea si no entran */
+    .navegacion { flex-wrap: wrap; justify-content: center; gap: 0.8rem; width: 100%; }
+    .nav-link { font-size: 0.95rem; }
+    
     .hero-imagen-fondo { height: 60vh; padding-top: 0; } 
     .titulo-gigante { font-size: 3rem; } 
     .texto-centrado-seccion { padding: 2rem; margin: 2rem auto; } 
     .buscador-ayuda-container { flex-direction: column; } 
     .btn-buscar { padding: 1rem; } 
+    
     .mapa-enlaces-horizontal { gap: 1rem; } 
     .enlaces-legales { flex-direction: column; gap: 0.3rem; }
     .enlaces-legales span { display: none; }
