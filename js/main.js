@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // --- ANIMACIONES DE SCROLL (NUEVO) ---
     // Seleccionamos automáticamente todos los elementos importantes
-    const elementosAAnimar = document.querySelectorAll('.texto-centrado-seccion, .columna-der-interactiva, .tarjeta-lugar, .personaje-card, .item-mosaico, .seccion-video, .seccion-promo, .columna-texto, .columna-imagen, .seccion-contacto, .seccion-mapa-faq');
+    const elementosAAnimar = document.querySelectorAll('.texto-centrado-seccion, .columna-der-interactiva, .tarjeta-lugar, .personaje-card, .item-mosaico, .seccion-video, .seccion-promo, .columna-texto, .columna-imagen, .seccion-contacto, .seccion-mapa-faq, .ayuda-card');
     
     elementosAAnimar.forEach(el => el.classList.add('scroll-anim')); // Les agregamos la clase base
 
